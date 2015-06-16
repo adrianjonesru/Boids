@@ -86,6 +86,7 @@ GameObject:
   - 92: {fileID: 36005275}
   - 124: {fileID: 36005274}
   - 81: {fileID: 36005273}
+  - 114: {fileID: 36005278}
   m_Layer: 0
   m_Name: _Main Camera
   m_TagString: MainCamera
@@ -123,7 +124,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: .255190283, g: .270328701, b: .29411763, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -158,6 +159,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &36005278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36005272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7b19b8213494343a4f2053a0d4cf4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numBoids: 275
+  boidPrefab: {fileID: 100008, guid: d95a8132dbb084044b9ed8042a06adf6, type: 2}
+  spawnRadius: 100
+  spawnVelocity: 10
+  minVelocity: 0
+  maxVelocity: 30.8199997
+  nearDist: 54.7999992
+  collisionDist: 5
+  velocityMatchingAmt: -.649999976
+  flockCenteringAmt: .119999997
+  collisionAvoidanceAmt: -18.8400002
+  mouseAttractionAmt: 1.12
+  mouseAvoidanceAmt: .75
+  mouseAvoidanceDist: 62.7000008
+  velocityLerpAmt: .25
+  ___________: 0
+  mousePos: {x: 0, y: 0, z: 0}
 --- !u!1 &317674011
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,6 +214,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1 &951212222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 951212223}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &951212223
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 951212222}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &1363200327
 GameObject:
   m_ObjectHideFlags: 0
